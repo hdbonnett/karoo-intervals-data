@@ -74,11 +74,11 @@ then:
 ./gradlew :core:test :app:testDebugUnitTest :app:assembleRelease
 ```
 
-The Build workflow tests and builds every push to `main`. To publish a release, bump `versionCode`/`versionName` in `app/build.gradle.kts` and push a matching tag (`git tag v0.1.5 && git push origin v0.1.5`); the Release workflow builds the APK and attaches it to a GitHub Release.
+The Build workflow tests and builds every push to `main`. To publish a release, bump `versionCode`/`versionName` in `app/build.gradle.kts` and push a matching tag (`git tag v0.1.5 && git push origin v0.1.5`) or create a release with that tag on github.com; the Release workflow builds the APK and attaches it to the GitHub Release.
 
 ## Setting up on the Karoo
 
-1. Install the APK. The easiest way: on your phone, open the latest [release](https://github.com/hdbonnett/karoo-intervals-data/releases/latest), long-press the `.apk` link and share it to the Hammerhead Companion app, then tap **Install** on the Karoo. (Or download the file and share it the same way, or use adb.)
+1. Install the APK. The easiest way: on your phone, open the APK in [`apk/`](apk/) (or the latest [release](https://github.com/hdbonnett/karoo-intervals-data/releases/latest), once there is one), tap **Raw** / the download link, and share it to the Hammerhead Companion app, then tap **Install** on the Karoo. (Or use adb.)
 2. Open **Intervals Data** on the Karoo and enter your Intervals athlete id and API key (Intervals › Settings › Developer). To avoid typing the key on the Karoo, with adb connected:
 
    ```

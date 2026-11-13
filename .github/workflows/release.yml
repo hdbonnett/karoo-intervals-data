@@ -1,6 +1,7 @@
 name: Release
 
-# Push a tag such as v0.1.5 to build the APK and publish it as a GitHub Release.
+# Push a tag such as v0.1.5, or create a release with a new v-tag on github.com,
+# to build the APK and attach it to that GitHub Release.
 # The release asset link can be shared to the Hammerhead Companion app to install on the Karoo.
 on:
   push:
@@ -37,4 +38,9 @@ jobs:
         run: |
           apk="karoo-intervals-data-${GITHUB_REF_NAME#v}.apk"
           cp app/build/outputs/apk/release/app-release.apk "$apk"
-          gh release create "$GITHUB_REF_NAME" "$apk" --title "$GITHUB_REF_NAME" --generate-notes
+          # A release created on github.com (which creates the tag) just gets the APK attached.
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$apk" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "$apk" --title "$GITHUB_REF_NAME" --generate-notes
+          fi
