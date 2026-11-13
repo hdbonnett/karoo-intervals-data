@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Intervals Data</string>
+    <string name="extension_name">Intervals Data</string>
+    <string name="now_fitness_name">Fitness now</string>
+    <string name="now_fitness_desc">Intervals fitness (CTL) including today\'s rides and this ride so far</string>
+    <string name="now_fatigue_name">Fatigue now</string>
+    <string name="now_fatigue_desc">Intervals fatigue (ATL) including today\'s rides and this ride so far</string>
+    <string name="now_form_name">Form now %</string>
+    <string name="now_form_desc">Intervals form (fitness minus fatigue, as % of fitness) right now</string>
+    <string name="now_cil_name">CIL now</string>
+    <string name="now_cil_desc">Chronic intensity load including today\'s rides and this ride so far</string>
+    <string name="week_fitness_name">Fitness end of week</string>
+    <string name="week_fitness_desc">Projected fitness on the last day of the week, with this ride and the rest of the plan</string>
+    <string name="week_fatigue_name">Fatigue end of week</string>
+    <string name="week_fatigue_desc">Projected fatigue on the last day of the week, with this ride and the rest of the plan</string>
+    <string name="week_form_name">Form end of week %</string>
+    <string name="week_form_desc">Projected form on the last day of the week</string>
+    <string name="week_cil_name">CIL end of week</string>
+    <string name="week_cil_desc">Projected chronic intensity load on the last day of the week</string>
+    <string name="week_time_name">Week time</string>
+    <string name="week_time_desc">Time done this week, including this ride</string>
+    <string name="week_time_pct_name">Week time %</string>
+    <string name="week_time_pct_desc">Time done this week as a percentage of the week\'s planned time</string>
+    <string name="week_load_name">Week load</string>
+    <string name="week_load_desc">Load done this week, including this ride</string>
+    <string name="week_load_pct_name">Week load %</string>
+    <string name="week_load_pct_desc">Load done this week as a percentage of the week\'s planned load</string>
+    <string name="week_distance_name">Week distance</string>
+    <string name="week_distance_desc">Distance this week including this ride</string>
+    <string name="week_summary_name">Week summary</string>
+    <string name="week_summary_desc">Intervals week card: fitness, fatigue, form, CIL and progress against the plan</string>
+    <string name="workout_target_load_name">Workout target load</string>
+    <string name="workout_target_load_desc">Planned load of the workout you are doing, from today\'s plan in Intervals. N/A when no workout is running</string>
+    <string name="week_time_projected_name">Week time projected</string>
+    <string name="week_time_projected_desc">Time done this week plus planned sessions still to come (the Intervals week card total)</string>
+    <string name="week_load_projected_name">Week load projected</string>
+    <string name="week_load_projected_desc">Load done this week plus planned sessions still to come (the Intervals week card total)</string>
+</resources>

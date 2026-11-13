@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RemoteViews layout for text-valued fields: the text shrinks to fit the slot; alignment comes from the Karoo view config. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/field_text"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="72sp"
+        android:autoSizeStepGranularity="2sp"
+        android:text="–" />
+</FrameLayout>

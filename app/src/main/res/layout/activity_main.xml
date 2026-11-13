@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/Label"
+            android:text="Intervals athlete id (Settings › Developer)" />
+        <EditText
+            android:id="@+id/athlete_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="i12345"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <TextView
+            style="@style/Label"
+            android:text="Intervals API key" />
+        <EditText
+            android:id="@+id/api_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+        <TextView
+            style="@style/Label"
+            android:text="Week starts on" />
+        <Spinner
+            android:id="@+id/week_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label"
+            android:text="FTP override (blank = FTP Intervals used for your latest ride)" />
+        <EditText
+            android:id="@+id/ftp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <CheckBox
+            android:id="@+id/replace_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="A live ride replaces today's planned workout" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Save and refresh from Intervals" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/Mono" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Simulate a ride today"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/sim_minutes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Minutes"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+            <EditText
+                android:id="@+id/sim_np"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="NP watts"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+            <EditText
+                android:id="@+id/sim_km"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="km"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/simulate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show what the fields would read" />
+
+        <TextView
+            android:id="@+id/sim_result"
+            style="@style/Mono" />
+    </LinearLayout>
+</ScrollView>

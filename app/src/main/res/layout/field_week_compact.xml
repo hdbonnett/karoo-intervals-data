@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RemoteViews layout: only framework views (LinearLayout, TextView, ProgressBar) are allowed. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="6dp" android:gravity="center_vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/label" android:text="Time" android:minWidth="34dp" />
+        <TextView android:id="@+id/time_text" android:textColor="@color/field_text" android:layout_width="0dp" android:layout_height="20dp" android:layout_weight="1" android:textStyle="bold" android:maxLines="1" android:gravity="center_vertical" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="9sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:text="–" />
+        <TextView android:id="@+id/time_pct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bar" android:text="–" />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/time_bar" style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="2dp"
+        android:max="100" android:progress="0" android:progressDrawable="@drawable/week_bar" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/label" android:text="Load" android:minWidth="34dp" />
+        <TextView android:id="@+id/load_text" android:textColor="@color/field_text" android:layout_width="0dp" android:layout_height="20dp" android:layout_weight="1" android:textStyle="bold" android:maxLines="1" android:gravity="center_vertical" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="9sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:text="–" />
+        <TextView android:id="@+id/load_pct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bar" android:text="–" />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/load_bar" style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="2dp"
+        android:max="100" android:progress="0" android:progressDrawable="@drawable/week_bar" />
+</LinearLayout>

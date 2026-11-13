@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Close to the Intervals.icu fitness chart colours; chosen to read on light and dark Karoo pages. -->
+    <color name="fitness">#3E9BE9</color>
+    <color name="fatigue">#C34BD8</color>
+    <color name="cil">#F08C3C</color>
+    <!-- Main value text, matching Karoo's own numbers. values-night/ holds the dark-theme version;
+         the layout resolves it inside Karoo's ride app, so it follows Karoo's day/night setting. -->
+    <color name="field_text">#1C1C1E</color>
+    <color name="label">#8A8F98</color>
+    <color name="bar">#2FA59A</color>
+    <color name="bar_track">#408A8F98</color>
+    <color name="bar_projected">#662FA59A</color>
+</resources>

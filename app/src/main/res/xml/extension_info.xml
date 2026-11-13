@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Data fields this extension offers in the Karoo page editor. typeIds must match DataFields.kt. -->
+<ExtensionInfo
+    id="intervals-data"
+    displayName="@string/extension_name"
+    icon="@drawable/ic_extension"
+    scansDevices="false">
+    <DataType
+        typeId="now-fitness"
+        displayName="@string/now_fitness_name"
+        description="@string/now_fitness_desc"
+        graphical="false"
+        icon="@drawable/ic_extension" />
+    <DataType
+        typeId="now-fatigue"
+        displayName="@string/now_fatigue_name"
+        description="@string/now_fatigue_desc"
+        graphical="false"
+        icon="@drawable/ic_extension" />
+    <DataType
+        typeId="now-form"
+        displayName="@string/now_form_name"
+        description="@string/now_form_desc"
+        graphical="false"
+        icon="@drawable/ic_extension" />
+    <DataType
+        typeId="now-cil"
+        displayName="@string/now_cil_name"
+        description="@string/now_cil_desc"
+        graphical="false"
+        icon="@drawable/ic_extension" />
+    <DataType
+        typeId="week-fitness"
+        displayName="@string/week_fitness_name"
+        description="@string/week_fitness_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-fatigue"
+        displayName="@string/week_fatigue_name"
+        description="@string/week_fatigue_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-form"
+        displayName="@string/week_form_name"
+        description="@string/week_form_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-cil"
+        displayName="@string/week_cil_name"
+        description="@string/week_cil_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-time"
+        displayName="@string/week_time_name"
+        description="@string/week_time_desc"
+        graphical="true"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-time-pct"
+        displayName="@string/week_time_pct_name"
+        description="@string/week_time_pct_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-load"
+        displayName="@string/week_load_name"
+        description="@string/week_load_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-load-pct"
+        displayName="@string/week_load_pct_name"
+        description="@string/week_load_pct_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-distance"
+        displayName="@string/week_distance_name"
+        description="@string/week_distance_desc"
+        graphical="true"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-time-projected"
+        displayName="@string/week_time_projected_name"
+        description="@string/week_time_projected_desc"
+        graphical="true"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="week-load-projected"
+        displayName="@string/week_load_projected_name"
+        description="@string/week_load_projected_desc"
+        graphical="false"
+        icon="@drawable/ic_week" />
+    <DataType
+        typeId="workout-target-load"
+        displayName="@string/workout_target_load_name"
+        description="@string/workout_target_load_desc"
+        graphical="true"
+        icon="@drawable/ic_extension" />
+    <DataType
+        typeId="week-summary"
+        displayName="@string/week_summary_name"
+        description="@string/week_summary_desc"
+        graphical="true"
+        icon="@drawable/ic_week" />
+</ExtensionInfo>
