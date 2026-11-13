@@ -90,3 +90,7 @@ The Build workflow tests and builds every push to `main`. To publish a release, 
 ## Privacy
 
 The API key is stored in the app's private storage on the Karoo and is only sent to intervals.icu. App backups are disabled.
+
+## Licence
+
+MIT, see [LICENSE](LICENSE). Built on Hammerhead's [karoo-ext](https://github.com/hammerheadnav/karoo-ext) (Apache 2.0). Not affiliated with Hammerhead or Intervals.icu.
